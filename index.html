@@ -2280,6 +2280,15 @@ box-shadow:0 2px 4px rgba(60,35,18,.35),inset 0 1px 0 rgba(255,245,230,.55)}
 @container cs26 (max-width:468px){.contents_div .cs26-wrap .cs26-sec[data-sec="s2"][id] img.cs26-s2topbg{width:120% !important;left:-10% !important;right:auto !important}}
 /* 감염병 예방(s2) 섹션 배경색: 단색 #fbe4ad로 통일(웹·모바일 공통) */
 .contents_div .cs26-wrap .cs26-sec[data-sec="s2"][id]{background:#fbe4ad}
+/* 포스터 슬라이드(웹): 위·아래 봉이 포스터를 덜 가리도록 두루마리 전체 길이 +10px(봉과 포스터 사이 위아래 5px씩 추가) */
+@media (min-width:601px){.contents_div .cs26-wrap .cs26-sec[data-sec="s2"][id] .cs26-slider{padding-top:14px;padding-bottom:14px}.contents_div .cs26-wrap .cs26-sec[data-sec="s2"][id] .cs26-slider .cs26-slider__count{bottom:29px}}
+/* 포스터 슬라이드(모바일): 봉이 포스터를 덜 가리도록 두루마리 길이 +8px(위아래 4px씩) */
+@media (max-width:600px){.contents_div .cs26-wrap .cs26-sec[data-sec="s2"][id] .cs26-slider{padding-top:11px;padding-bottom:11px}.contents_div .cs26-wrap .cs26-sec[data-sec="s2"][id] .cs26-slider .cs26-slider__count{bottom:26px}}
+@container cs26 (max-width:568px){.contents_div .cs26-wrap .cs26-sec[data-sec="s2"][id] .cs26-slider{padding-top:11px;padding-bottom:11px}.contents_div .cs26-wrap .cs26-sec[data-sec="s2"][id] .cs26-slider .cs26-slider__count{bottom:26px}}
+/* 포스터 슬라이드: 봉이 포스터를 전혀 덮지 않게 — 봉 높이만큼 위아래 여백(웹 20px, 모바일 16px). 포스터는 웹·모바일 모두 원본 비율 그대로 전부 보임 */
+@media (min-width:601px){.contents_div .cs26-wrap .cs26-sec[data-sec="s2"][id] .cs26-slider{padding-top:20px;padding-bottom:20px}.contents_div .cs26-wrap .cs26-sec[data-sec="s2"][id] .cs26-slider .cs26-slider__count{bottom:32px}}
+@media (max-width:600px){.contents_div .cs26-wrap .cs26-sec[data-sec="s2"][id] .cs26-slider{padding-top:16px;padding-bottom:16px}.contents_div .cs26-wrap .cs26-sec[data-sec="s2"][id] .cs26-slider .cs26-slider__count{bottom:26px}}
+@container cs26 (max-width:568px){.contents_div .cs26-wrap .cs26-sec[data-sec="s2"][id] .cs26-slider{padding-top:16px;padding-bottom:16px}.contents_div .cs26-wrap .cs26-sec[data-sec="s2"][id] .cs26-slider .cs26-slider__count{bottom:26px}}
 </style>
 
 <div class="cs26-root"><div class="cs26-wrap">
